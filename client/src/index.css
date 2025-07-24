@@ -1,0 +1,120 @@
+@import "tailwindcss";
+
+
+
+/* Calendar CSS */
+
+.react-calendar {
+    width: 100%;
+    background-color: #1e293b; /* gray-800 */
+    color: #f3f4f6; /* gray-200 */
+    border-radius: 0.5rem; /* rounded-md */
+    border: 1px solid #374151; /* gray-700 */
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    line-height: 1.125;
+    direction: ltr; /* Ensure left-to-right rendering */
+  }
+  
+  /* Style for the navigation */
+  .react-calendar__navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Vertically align items */
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+  }
+  
+  /* Style for the navigation buttons */
+  .react-calendar__navigation button {
+    color: #8b5cf6; /* indigo-500 */
+    min-width: 44px;
+    background: none;
+    border: none;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+  }
+  
+  .react-calendar__navigation button:disabled {
+    color: #4b5563; /* gray-600 */
+    cursor: default;
+  }
+  
+  /* Style for the navigation label (month and year - centered and bigger) */
+  .react-calendar__navigation__label {
+    font-weight: 600;
+    color: #f3f4f6; /* gray-200 */
+    padding: 0 0.5rem;
+    font-size: 1.25rem; /* Larger font size */
+    flex-grow: 1; /* Allow it to take up space */
+    text-align: center; /* Center the text */
+  }
+  
+  /* Style for the weekdays header */
+  .react-calendar__month-view__weekdays {
+    display: grid;
+    grid-template-columns: repeat(7, minmax(0, 1fr));
+    text-align: center;
+    font-size: 0.875rem; /* text-sm */
+    color: #6366f1; /* indigo-400 */
+    margin-bottom: 0.5rem;
+  }
+  
+  .react-calendar__month-view__weekdays__weekday {
+    abbr[title] {
+      text-decoration: none;
+    }
+  }
+  
+  Style for the grid of days
+  .react-calendar__month-view__days {
+    display: grid;
+    grid-template-columns: repeat(7, minmax(0, 1fr));
+    grid-gap: 0.25rem; /* gap-1 */
+}
+  
+  /* Style for each individual day tile with hover effect */
+  .react-calendar__tile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem;
+    background: none;
+    border-radius: 0.25rem; /* rounded-sm */
+    text-align: center;
+    color: #f3f4f6; /* gray-200 */
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out; /* Smooth transition for hover */
+  }
+  
+  .react-calendar__tile:hover {
+    background-color: #374151; /* Slightly lighter background on hover */
+  }
+  
+  .react-calendar__tile:disabled {
+    background-color: #1e293b; /* Same as calendar background */
+    color: #4b5563; /* gray-600 */
+    cursor: default;
+  }
+  
+  /* Style for the 'today' indicator */
+  .react-calendar__tile--now {
+    background: #2563eb; /* blue-600 */
+    color: #f3f4f6; /* gray-200 */
+    font-weight: 500;
+  }
+  
+  /* Style for when a date has an active state (e.g., selected) */
+  .react-calendar__tile--hasActive {
+    background: #4f46e5; /* indigo-600 */
+    color: #f3f4f6; /* gray-200 */
+  }
+  
+  /* Style for the actively selected date */
+  .react-calendar__tile--active {
+    background: #4f46e5; /* indigo-600 */
+    color: #f3f4f6; /* gray-200 */
+    font-weight: 600;
+  }
+
+  /* Calendar CSS ends here */
