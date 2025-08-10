@@ -5,7 +5,8 @@ A way for people to buy and sell their monthly incomes
 2. install xampp and node
 3. create database "sharemyrentdb"
 4. start xampp
-5. sql the following: CREATE TABLE `users` (
+5. sql the following:
+   CREATE TABLE `users` (
   `id` INT(11) NOT NULL AUTO_INCREMENT,
   `username` VARCHAR(255) NOT NULL UNIQUE,
   `email` VARCHAR(255) NOT NULL UNIQUE,
