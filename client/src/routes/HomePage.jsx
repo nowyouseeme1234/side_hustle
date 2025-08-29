@@ -60,13 +60,13 @@ const HomePage = () => {
 
               <button
                 className='bg-teal-500 hover:bg-teal-700 text-white font-semibold py-2 px-4 rounded-md focus:outline-none focus:ring-2 focus:ring-teal-500 focus:ring-offset-2 text-sm'
-                onClick={handleLoginButton}
+                // onClick={handleLoginButton}
               >
                 Log In
               </button>
               <button
                 className='bg-indigo-500 hover:bg-indigo-700 text-white font-semibold py-2 px-4 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 text-sm'
-                onClick={handleSignupButton}
+                // onClick={handleSignupButton}
               >
                 Sign Up
               </button>
@@ -87,19 +87,23 @@ const HomePage = () => {
           Introducing a revolutionary platform connecting homeowners looking to sell a portion of their rental income with investors seeking stable, recurring returns.
         </p>
         <div className='flex flex-col md:flex-row gap-4'>
-          <button className='bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-3 px-6 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2' onClick={handleListPropertyButton}>
+          <button className='bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-3 px-6 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2' 
+          // onClick={handleListPropertyButton}
+          >
             List Your Property
           </button>
-          <button className='bg-teal-600 hover:bg-teal-700 text-white font-semibold py-3 px-6 rounded-md focus:outline-none focus:ring-2 focus:ring-teal-500 focus:ring-offset-2' onClick={handleExplorePropertyButton}>
+          <button className='bg-teal-600 hover:bg-teal-700 text-white font-semibold py-3 px-6 rounded-md focus:outline-none focus:ring-2 focus:ring-teal-500 focus:ring-offset-2' 
+          // onClick={handleExplorePropertyButton}
+          >
             Explore Properties
           </button>
         </div>
 
         {/* Join waiting list button */}
 
-        <div className='mt-14 cursor-pointer'>
+        <div className='mt-14 cursor-pointer px-4'>
           <a href="https://t.me/+k7im0BTNmwxmZDc8" target="_blank">
-            <button className='animated-border-button w-2xl h-20 rounded-3xl font-extrabold cursor-pointer'>
+            <button className='animated-border-button w-full h-16 sm:h-20 rounded-3xl font-extrabold text-sm sm:text-base md:text-xl cursor-pointer'>
               CLICK HERE TO JOIN OUR <span className='text-blue-400'>TELEGRAM</span> WAITING LIST
             </button>
           </a>
@@ -149,18 +153,22 @@ const HomePage = () => {
           Join our community of homeowners and investors today and unlock new possibilities.
         </p>
         <div className='flex justify-center gap-4'>
-          <button className='bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-3 px-6 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2' onClick={handleListPropertyButton}>
+          <button className='bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-3 px-6 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2' 
+          // onClick={handleListPropertyButton}
+          >
             List Your Property
           </button>
-          <button className='bg-teal-600 hover:bg-teal-700 text-white font-semibold py-3 px-6 rounded-md focus:outline-none focus:ring-2 focus:ring-teal-500 focus:ring-offset-2' onClick={handleExplorePropertyButton}>
+          <button className='bg-teal-600 hover:bg-teal-700 text-white font-semibold py-3 px-6 rounded-md focus:outline-none focus:ring-2 focus:ring-teal-500 focus:ring-offset-2' 
+          // onClick={handleExplorePropertyButton}
+          >
             Explore Properties
           </button>
         </div>
 
         {/* Join waiting list button */}
-         <div className='mt-14 cursor-pointer'>
+         <div className='mt-14 cursor-pointer px-4'>
           <a href="https://t.me/+k7im0BTNmwxmZDc8" target="_blank">
-            <button className='animated-border-button w-2xl h-26 rounded-3xl font-extrabold cursor-pointer'>
+            <button className='animated-border-button w-full h-16 sm:h-20 rounded-3xl font-extrabold text-sm sm:text-base md:text-xl cursor-pointer'>
               CLICK HERE TO JOIN OUR <span className='text-blue-400'>TELEGRAM</span> WAITING LIST
             </button>
           </a>
