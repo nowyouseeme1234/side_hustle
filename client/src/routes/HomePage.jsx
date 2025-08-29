@@ -38,6 +38,7 @@ const HomePage = () => {
     navigate('/');
   };
 
+
   return (
     <div className='text-white bg-black min-h-screen flex flex-col'>
       {/* Navigation Bar */}
@@ -93,6 +94,16 @@ const HomePage = () => {
             Explore Properties
           </button>
         </div>
+
+        {/* Join waiting list button */}
+
+        <div className='mt-14 cursor-pointer'>
+          <a href="https://t.me/+k7im0BTNmwxmZDc8" target="_blank">
+            <button className='animated-border-button w-2xl h-20 rounded-3xl font-extrabold cursor-pointer'>
+              CLICK HERE TO JOIN OUR <span className='text-blue-400'>TELEGRAM</span> WAITING LIST
+            </button>
+          </a>
+        </div>
       </section>
 
       {/* How It Works Section */}
@@ -144,6 +155,15 @@ const HomePage = () => {
           <button className='bg-teal-600 hover:bg-teal-700 text-white font-semibold py-3 px-6 rounded-md focus:outline-none focus:ring-2 focus:ring-teal-500 focus:ring-offset-2' onClick={handleExplorePropertyButton}>
             Explore Properties
           </button>
+        </div>
+
+        {/* Join waiting list button */}
+         <div className='mt-14 cursor-pointer'>
+          <a href="https://t.me/+k7im0BTNmwxmZDc8" target="_blank">
+            <button className='animated-border-button w-2xl h-26 rounded-3xl font-extrabold cursor-pointer'>
+              CLICK HERE TO JOIN OUR <span className='text-blue-400'>TELEGRAM</span> WAITING LIST
+            </button>
+          </a>
         </div>
       </section>
 
